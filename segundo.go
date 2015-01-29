@@ -11,6 +11,7 @@ func main(){
 	boo()
 	b = tonto()
 	fmt.Println("The value received by tonto is:", b)
+	fmt.Printf("The value received by tonto is: %t \n", b)
 	cadenas("uno", "dos")
 }
 
@@ -25,6 +26,8 @@ func tonto()(bool){
 }
 
 func cadenas(x string, y string){
+	fmt.Printf("Hola uno es %s y dos es %s \n", x, y)
 	var una, dos string =  x, y
 	fmt.Println("La primera es: " + una + ", la segunda es: " + dos)
+	
 }
